@@ -11,6 +11,7 @@
 
 ```JavaScript
 npm install --save scpp
+const {sync, parallel} = require('scpp')
 ``` 
 
 #### sync minification
