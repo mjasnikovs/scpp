@@ -1,6 +1,7 @@
 .git
-./node_modules
-./test
+node_modules/
+test/
+logo.png
 .eslintrc.js
 .gitignore
 .npmignore
