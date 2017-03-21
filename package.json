@@ -1,10 +1,13 @@
 {
   "name": "scpp",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "description": "Small, fast asynchronous and parallel functions",
-  "main": "scpp.js",
+  "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -22,5 +25,13 @@
   "bugs": {
     "url": "https://github.com/mjasnikovs/scpp/issues"
   },
-  "homepage": "https://github.com/mjasnikovs/scpp#readme"
+  "homepage": "https://github.com/mjasnikovs/scpp#readme",
+  "devDependencies": {
+    "babel-eslint": "^7.2.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.18.0",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-node": "^4.2.1",
+    "mocha": "^3.2.0"
+  }
 }
