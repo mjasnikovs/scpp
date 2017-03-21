@@ -50,7 +50,7 @@ Sync accepts 2 arguments
 sync([
 	// Function always shod return callback
 	// return callback(ERROR, VALUE passing down)
-	// if ERROR is not null, asynchronous execution will stop and error value is returned.
+	// if ERROR is not null, synchronously execution will stop and error value is returned.
 	callback => {
 		console.log('First!')
 		return callback(null, 'Secound!')
