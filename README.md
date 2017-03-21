@@ -2,7 +2,7 @@
 
 ###### Forget about bloated libraries, promises, function generators and embrace callbacks.
 
-## Why scpp?
+# Why scpp?
 * Small (1 file, 20 lines of code, no dependency's)
 * Fast (Faster then async.js)
 * Tested in production
@@ -23,13 +23,13 @@ const sync = (l,c) => (function $(l,c,i,r){l[i]((e,d)=>l[++i]&&!e?$(l,c,i,d):c(e
 const parallel = (l,c) => {let t=l.length,x=1;l.forEach((v,k)=>v((e,d)=>{l[k]=d;return(--t!==0&&x===1&&!e)===true||--x||c(e,l)}))}
 ```
 
-## How to use sync
+# How to use sync
 Sync accepts 2 arguments
 * array, with functions to execute synchronously
 ```JavaScript 
 [Function, Function, Function]
 ```
-* callback function, witch is executed after all functions in array have finished executing, or any of functions returns error
+* callback function, which is executed after all functions in array have finished executing, or any of functions returns error
 ```JavaScript 
 (error, result) => {
 	if (error) {
@@ -49,7 +49,7 @@ sync([
 		console.log('First!')
 		return callback(null, 'Secound!')
 	},
-	// Only one value can be passed down (Witch can contain multiple values inside, doh)
+	// Only one value can be passed down (Which can contain multiple values inside, doh)
 	(callback, previously) => {
 		console.log(previously) // Secound!
 		return callback(null, 'Third!')
@@ -61,13 +61,13 @@ sync([
 })
 ```
 
-## How to use parallel
+# How to use parallel
 Parallel accepts 2 arguments
 * array, with functions to execute in parallel
 ```JavaScript 
 [Function, Function, Function]
 ```
-* callback function, witch is executed after all functions in array have finished executing, or any of functions returns error
+* callback function, which is executed after all functions in array have finished executing, or any of functions returns error
 ```JavaScript 
 (error, result) => {
 	if (error) {
