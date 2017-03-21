@@ -4,7 +4,7 @@
   "engines": {
     "node": ">=6.0.0"
   },
-  "description": "Small, fast asynchronous and parallel functions",
+  "description": "Micro functions to execute asynchronous functions synchronously or in parallel.",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/mocha"
