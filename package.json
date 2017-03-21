@@ -1,0 +1,26 @@
+{
+  "name": "scpp",
+  "version": "1.0.0",
+  "description": "Small, fast asynchronous and parallel functions",
+  "main": "scpp.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjasnikovs/scpp.git"
+  },
+  "keywords": [
+    "sync",
+    "parallelm",
+    "async",
+    "small",
+    "fast"
+  ],
+  "author": "Edgars Mjasņiokovs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mjasnikovs/scpp/issues"
+  },
+  "homepage": "https://github.com/mjasnikovs/scpp#readme"
+}
